@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<header style="border-width: 1px; border-color: #94bf62; margin: 10px">
-			<h1 style="text-align: center">Default Layout - header section</h1>
+			<h2 style="text-align: center">Default Layout - header section</h2>
 		</header>
 		<main
 			style="
@@ -25,7 +25,7 @@
 						</li>
 						<li>
 							<span
-								>You can add me as <code>&lt;NuxtLayout&#47;&gt;</code> in
+								>I'm added as <code>&lt;NuxtLayout&#47;&gt;</code> in
 								<code>app.vue</code></span
 							>
 						</li>
@@ -46,7 +46,7 @@
 			</slot>
 		</main>
 		<footer style="border-width: 1px; border-color: #94bf62; margin: 10px">
-			<h1 style="text-align: center">Default Layout - footer section</h1>
+			<h2 style="text-align: center">Default Layout - footer section</h2>
 		</footer>
 	</div>
 </template>
