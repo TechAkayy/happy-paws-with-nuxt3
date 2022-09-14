@@ -8,3 +8,4 @@ node_modules
 dist
 _pgbackup
 _pginfo
+pinegrow.json

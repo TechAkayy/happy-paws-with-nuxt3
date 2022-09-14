@@ -1,14 +1,16 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@pinegrow/nuxt-module": "^1.0.0-alpha.15",
-    "nuxt": "3.0.0-rc.9"
-  }
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"vue-devtools": "vue-devtools"
+	},
+	"devDependencies": {
+		"@pinegrow/nuxt-module": "^1.0.0-alpha.15",
+		"@vue/devtools": "^6.2.1",
+		"nuxt": "3.0.0-rc.9"
+	}
 }
