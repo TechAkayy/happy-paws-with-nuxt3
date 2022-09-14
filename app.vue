@@ -1,3 +1,3 @@
 <template>
-	<NuxtLayout> <NuxtWelcome /> </NuxtLayout>
+	<NuxtLayout><NuxtWelcome /> </NuxtLayout>
 </template>
