@@ -113,9 +113,9 @@
 						>About Us</NuxtLink
 					>
 					<NuxtLink
-						to="/services"
+						to="/stories"
 						class="hover:text-primary-500 py-2 text-gray-500 lg:p-4"
-						>Services</NuxtLink
+						>Stories</NuxtLink
 					>
 					<NuxtLink
 						to="/adopt"

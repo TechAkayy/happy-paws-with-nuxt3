@@ -185,8 +185,8 @@
 							>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="/services" class="hover:text-primary-600"
-								>Services</NuxtLink
+							<NuxtLink to="/stories" class="hover:text-primary-600"
+								>Stories</NuxtLink
 							>
 						</li>
 						<li class="mb-4">
