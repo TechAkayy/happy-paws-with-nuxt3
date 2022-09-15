@@ -4,7 +4,7 @@
 	<div class="container mx-auto relative" data-pg-collapsed>
 		<nav class="flex flex-wrap items-center p-4">
 			<NuxtLink
-				to="#"
+				to="/"
 				class="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mr-4 text-gray-900 text-xl"
 			>
 				<svg
@@ -108,12 +108,12 @@
 						>Home</NuxtLink
 					>
 					<NuxtLink
-						to="#"
+						to="/about-us"
 						class="hover:text-primary-500 py-2 text-gray-500 lg:p-4"
 						>About Us</NuxtLink
 					>
 					<NuxtLink
-						to="#"
+						to="/services"
 						class="hover:text-primary-500 py-2 text-gray-500 lg:p-4"
 						>Services</NuxtLink
 					>
@@ -123,13 +123,13 @@
 						>Adopt</NuxtLink
 					>
 					<NuxtLink
-						to="#"
+						to="/volunteer"
 						class="hover:text-primary-500 py-2 text-gray-500 lg:p-4"
 						>Volunteer</NuxtLink
 					>
 				</div>
 				<NuxtLink
-					to="#"
+					to="/donate"
 					class="bg-primary-500 hover:bg-primary-600 inline-block px-6 py-2 rounded-full text-center text-gray-900"
 					>Donate</NuxtLink
 				>

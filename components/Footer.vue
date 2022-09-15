@@ -6,7 +6,7 @@
 			<div class="flex flex-wrap -mx-4">
 				<div class="w-full p-4 xl:w-4/12">
 					<NuxtLink
-						to="#"
+						to="/"
 						class="font-bold font-serif hover:text-opacity-75 inline-flex items-center leading-none mb-6 text-3xl text-primary-500"
 					>
 						<svg
@@ -94,17 +94,17 @@
 						semper.
 					</p>
 					<div class="mb-6">
-						<NuxtLink to="#" class="hover:text-primary-600"
+						<NuxtLink to="/" class="hover:text-primary-600"
 							>+1 234 567-890</NuxtLink
 						>
 						<br />
-						<NuxtLink to="#" class="hover:text-primary-600"
+						<NuxtLink to="/" class="hover:text-primary-600"
 							>hello@fantico.com</NuxtLink
 						>
 					</div>
 					<div class="flex-wrap inline-flex space-x-3">
 						<NuxtLink
-							to="#"
+							to="/"
 							aria-label="facebook"
 							class="hover:text-primary-600"
 						>
@@ -114,7 +114,7 @@
 								/></svg
 						></NuxtLink>
 						<NuxtLink
-							to="#"
+							to="/"
 							aria-label="twitter"
 							class="hover:text-primary-600"
 						>
@@ -124,7 +124,7 @@
 								/></svg
 						></NuxtLink>
 						<NuxtLink
-							to="#"
+							to="/"
 							aria-label="instagram"
 							class="hover:text-primary-600"
 						>
@@ -134,7 +134,7 @@
 								/></svg
 						></NuxtLink>
 						<NuxtLink
-							to="#"
+							to="/"
 							aria-label="linkedin"
 							class="hover:text-primary-600"
 						>
@@ -144,7 +144,7 @@
 								/></svg
 						></NuxtLink>
 						<NuxtLink
-							to="#"
+							to="/"
 							aria-label="youtube"
 							class="hover:text-primary-600"
 						>
@@ -160,21 +160,16 @@
 					<hr class="border-primary-500 my-6 opacity-25 w-3/12" />
 					<ul>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600">FAQ</NuxtLink>
+							<NuxtLink to="/" class="hover:text-primary-600">FAQ</NuxtLink>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600">News</NuxtLink>
+							<NuxtLink to="/" class="hover:text-primary-600">News</NuxtLink>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600">Careers</NuxtLink>
+							<NuxtLink to="/" class="hover:text-primary-600">Careers</NuxtLink>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600"
-								>Contact Us</NuxtLink
-							>
-						</li>
-						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600"
+							<NuxtLink to="/" class="hover:text-primary-600"
 								>Contact Us</NuxtLink
 							>
 						</li>
@@ -185,26 +180,28 @@
 					<hr class="border-primary-500 my-6 opacity-25 w-3/12" />
 					<ul>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600"
-								>Our Herd</NuxtLink
+							<NuxtLink to="/about-us" class="hover:text-primary-600"
+								>About Us</NuxtLink
 							>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600"
+							<NuxtLink to="/services" class="hover:text-primary-600"
 								>Services</NuxtLink
 							>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600">Donate</NuxtLink>
+							<NuxtLink to="/adopt" class="hover:text-primary-600"
+								>Adopt</NuxtLink
+							>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600"
+							<NuxtLink to="/volunteer" class="hover:text-primary-600"
 								>Volunteer</NuxtLink
 							>
 						</li>
 						<li class="mb-4">
-							<NuxtLink to="#" class="hover:text-primary-600"
-								>Get Involved</NuxtLink
+							<NuxtLink to="/donate" class="hover:text-primary-600"
+								>Donate</NuxtLink
 							>
 						</li>
 					</ul>

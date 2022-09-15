@@ -22,7 +22,7 @@
 					pulvinar faucibus neque, nec rhoncus nunc ultrices sit amet.
 				</p>
 				<NuxtLink
-					to="#"
+					to="/about-us"
 					class="bg-primary-500 hover:bg-primary-600 inline-block px-6 py-2 rounded-full text-gray-900"
 					>Learn More</NuxtLink
 				>

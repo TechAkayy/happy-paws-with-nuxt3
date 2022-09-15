@@ -19,10 +19,23 @@
 				</div>
 			</div>
 			<div class="-mx-3 flex flex-wrap justify-center mb-12">
-				<AdoptSectionCard v-for="(pet, index) in pets" :breed="pet.Breed" :date-of-birth="pet.Date_Of_Birth" :id="pet.id" :image-url="pet.Image_URL" :name="pet.Name" :sex="pet.Sex" :species="pet.Species"/>
+				<AdoptSectionCard
+					v-for="(pet, index) in pets"
+					:breed="pet.Breed"
+					:date-of-birth="pet.Date_Of_Birth"
+					:id="pet.id"
+					:image-url="pet.Image_URL"
+					:name="pet.Name"
+					:sex="pet.Sex"
+					:species="pet.Species"
+				/>
 			</div>
 			<div>
-				<NuxtLink to="#" class="bg-secondary-500 hover:bg-secondary-600 inline-block px-6 py-2 rounded-full text-white">Meet Them All</NuxtLink>
+				<NuxtLink
+					to="/adopt"
+					class="bg-secondary-500 hover:bg-secondary-600 inline-block px-6 py-2 rounded-full text-white"
+					>Meet Them All</NuxtLink
+				>
 			</div>
 		</div>
 	</section>
