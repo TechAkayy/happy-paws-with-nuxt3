@@ -7,7 +7,7 @@
 		>
 			<div class="px-4 py-1 space-x-4">
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500 text-sm"
 				>
 					<svg
@@ -22,7 +22,7 @@
 					+0-123-456-789
 				</NuxtLink>
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500 text-sm"
 				>
 					<svg
@@ -39,7 +39,7 @@
 			</div>
 			<div class="flex-wrap inline-flex px-4 py-1 space-x-3">
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500"
 					aria-label="facebook"
 				>
@@ -49,7 +49,7 @@
 						/></svg
 				></NuxtLink>
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500"
 					aria-label="twitter"
 				>
@@ -59,7 +59,7 @@
 						/></svg
 				></NuxtLink>
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500"
 					aria-label="instagram"
 				>
@@ -69,7 +69,7 @@
 						/></svg
 				></NuxtLink>
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500"
 					aria-label="linkedin"
 				>
@@ -79,7 +79,7 @@
 						/></svg
 				></NuxtLink>
 				<NuxtLink
-					to="#"
+					to="/"
 					class="hover:text-secondary-400 text-secondary-500"
 					aria-label="youtube"
 				>
