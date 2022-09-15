@@ -11,6 +11,6 @@
 	"devDependencies": {
 		"@pinegrow/nuxt-module": "^1.0.0-alpha.15",
 		"@vue/devtools": "^6.2.1",
-		"nuxt": "3.0.0-rc.9"
+		"nuxt": "^3.0.0-rc.10"
 	}
 }
