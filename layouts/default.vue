@@ -1,18 +1,10 @@
 <template>
-	<div>
-		<header style="border-width: 1px; border-color: #94bf62; margin: 10px">
-			<h2 style="text-align: center">Default Layout - header section</h2>
+	<div class="bg-gray-100 text-gray-500">
+		<header>
+			<AppBar />
+			<NavBar />
 		</header>
-		<main
-			style="
-				border-width: 1px;
-				border-color: #94bf62;
-				margin: 10px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			"
-		>
+		<main>
 			<slot>
 				<h2 style="text-align: center">Default Layout - Slot</h2>
 				<div>
@@ -45,8 +37,8 @@
 				</div>
 			</slot>
 		</main>
-		<footer style="border-width: 1px; border-color: #94bf62; margin: 10px">
-			<h2 style="text-align: center">Default Layout - footer section</h2>
+		<footer>
+			<Footer />
 		</footer>
 	</div>
 </template>

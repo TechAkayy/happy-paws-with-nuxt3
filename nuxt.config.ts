@@ -3,10 +3,14 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	modules: ['@pinegrow/nuxt-module'],
+	// ssr: false,
+	modules: ['@pinegrow/nuxt-module', '@nuxtjs/tailwindcss', 'nuxt-directus'],
 	pinegrow: {
 		liveDesigner: {
 			usingStandaloneVueDevtools: true
 		}
+	},
+	directus: {
+		url: 'https://hlursirm.directus.app'
 	}
 })

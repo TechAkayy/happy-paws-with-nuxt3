@@ -1,0 +1,18 @@
+
+/* Pinegrow generated Design Panel Init Begin */
+@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&display=swap');
+
+
+    /* Pinegrow generated Design Panel Init End */
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pinegrow generated Design Panel Extra Rules Begin */
+body, html {
+    min-height: 100vh;
+}
+
+    /* Pinegrow generated Design Panel Extra Rules End */

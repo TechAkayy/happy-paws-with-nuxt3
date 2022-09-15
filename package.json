@@ -9,8 +9,10 @@
 		"vue-devtools": "vue-devtools"
 	},
 	"devDependencies": {
+		"@nuxtjs/tailwindcss": "^5.3.3",
 		"@pinegrow/nuxt-module": "^1.0.0-alpha.15",
 		"@vue/devtools": "^6.2.1",
-		"nuxt": "^3.0.0-rc.10"
+		"nuxt": "^3.0.0-rc.10",
+		"nuxt-directus": "^3.0.3"
 	}
 }
