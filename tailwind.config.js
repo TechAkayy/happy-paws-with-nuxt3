@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 /* Pinegrow generated Design Panel Begin */
 
 const pg_colors = {
@@ -143,6 +145,7 @@ const pg_fonts = {
 /* Pinegrow generated Design Panel End */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	plugins: [require('@tailwindcss/typography')],
 	content: [
 		`components/**/*.{vue,js}`,
 		`layouts/**/*.vue`,
@@ -154,9 +157,10 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			colors: pg_colors,
+			colors: {
+				...pg_colors
+			},
 			fontFamily: pg_fonts
 		}
-	},
-	plugins: []
+	}
 }

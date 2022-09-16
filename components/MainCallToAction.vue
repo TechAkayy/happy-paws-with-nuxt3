@@ -32,13 +32,7 @@
 			</div>
 		</div>
 		<div class="-mx-4 flex flex-wrap justify-center text-center">
-			<MainCallToActionCard
-				v-for="(callToAction, index) in callToActions"
-				:img="callToAction.img"
-				:action="callToAction.action"
-				:to="callToAction.to"
-				:key="index"
-			/>
+			<MainCallToActionCard v-for="(callToAction, index) in callToActions" :img="callToAction.img" :action="callToAction.action" :to="callToAction.to" :key="index"/>
 		</div>
 	</div>
 </template>

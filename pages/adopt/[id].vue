@@ -4,7 +4,9 @@
 		return await usePet()
 	})
 
-	// const pet = await usePet()
+	useHead({
+		title: pet.value.Name
+	})
 </script>
 
 <template>

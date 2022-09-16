@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+	useHead({
+		title: 'Happy Paws'
+	})
+</script>
 
 <template>
-	<div><HeroSection/><MainSection/><AdoptSection/><OurWorkSection/></div>
+	<div><HeroSection /><MainSection /><AdoptSection /><OurWorkSection /></div>
 </template>
 
 <style scoped>

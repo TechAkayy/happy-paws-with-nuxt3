@@ -2,9 +2,9 @@
 
 <template>
 	<section>
-		<MainCallToAction />
-		<MiniDivider />
-		<MainOurMission />
+		<MainCallToAction/>
+		<MiniDivider/>
+		<MainOurMission/>
 	</section>
 </template>
 
