@@ -3,7 +3,7 @@
 		return fetchContentNavigation()
 	})
 	useHead({
-		title: 'Stories'
+		title: 'blog'
 	})
 </script>
 
@@ -45,7 +45,7 @@
 									<li
 										class="list-item text-sm text-gray-600 hover:text-primary-900 underline underline-offset-4 decoration-wavy decoration-primary/40 hover:decoration-primary transition-all"
 									>
-										<NuxtLink :to="`/stories${child._path}`">
+										<NuxtLink :to="`/blog${child._path}`">
 											{{ child.title }}
 										</NuxtLink>
 									</li>
@@ -55,7 +55,7 @@
 								<li
 									class="list-item text-sm text-gray-600 hover:text-primary-900 underline underline-offset-4 decoration-wavy decoration-primary/40 hover:decoration-primary transition-all"
 								>
-									<NuxtLink :to="`/stories${b._path}`"> Get Started </NuxtLink>
+									<NuxtLink :to="`/blog${b._path}`"> Get Started </NuxtLink>
 								</li>
 							</ul>
 						</div>

@@ -1,5 +1,5 @@
 <script setup>
-	defineProps({
+	const props = defineProps({
 		img: {
 			type: String,
 			required: true
@@ -13,27 +13,38 @@
 			required: true
 		}
 	})
+
+	const imgStyle = $computed(() => ({
+		'background-image': `url('${props.img}')`
+	}))
 </script>
 
 <template>
-	<div class="p-4 w-full md:w-6/12 lg:w-4/12">
-		<NuxtLink :to="to" class="group"
-			><div class="overflow-hidden relative rounded-3xl">
-				<img
-					:src="img"
-					class="group-hover:opacity-90 w-full"
-					alt="..."
-					width="900"
-					height="1000"
-				/>
-				<div
-					class="absolute bg-primary-500 bottom-0 inset-x-0 mb-5 mx-5 p-5 rounded-xl"
-				>
-					<h4 class="font-medium text-gray-900 text-xl">{{ action }}</h4>
-				</div>
-			</div></NuxtLink
-		>
-	</div>
+	<!-- <div
+		class="bg-cover bg-no-repeat m-4 pb-4 pt-96 px-4 rounded-3xl w-full sm:w-8/12 md:w-6/12 lg:w-4/12 xl:w-3/12"
+		:style="imgStyle"
+	>
+		<NuxtLink :to="to" class="group">
+			<div
+				class="bg-primary-500 inline-block p-5 rounded-xl text-center w-full"
+			>
+				<span class="font-medium text-center text-gray-900 text-xl">
+					{{ action }}
+				</span>
+			</div>
+		</NuxtLink>
+	</div> -->
+	<div class="pb-4 px-4 rounded-3xl w-full sm:w-8/12 md:w-6/12 lg:w-4/12">
+		
+	<div class="bg-cover bg-no-repeat pb-4 pt-96 px-4 rounded-3xl" :style="imgStyle">
+		<NuxtLink :to="to" class="group">
+			<div class="bg-primary-500 inline-block p-5 rounded-xl text-center w-full">
+				<span class="font-medium text-center text-gray-900 text-xl">
+					{{ action }}
+				</span>
+			</div>
+		</NuxtLink>
+	</div></div>
 </template>
 
 <style scoped></style>

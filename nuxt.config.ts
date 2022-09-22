@@ -4,12 +4,13 @@ import { tailwindParser } from '@pinegrow/tailwind-plugin'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	// ssr: false,
+	ssr: false,
 	modules: [
 		'@pinegrow/nuxt-module',
 		'@nuxtjs/tailwindcss',
 		'nuxt-directus',
-		'@nuxt/content'
+		'@nuxt/content',
+		'@vueuse/nuxt'
 	],
 	pinegrow: {
 		liveDesigner: {
@@ -34,5 +35,8 @@ export default defineNuxtConfig({
 		highlight: {
 			theme: 'dracula-soft'
 		}
+	},
+	experimental: {
+		reactivityTransform: true
 	}
 })

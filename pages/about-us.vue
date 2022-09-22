@@ -3,14 +3,11 @@
 		title: 'Happy Paws'
 	})
 </script>
+
 <template>
-    <div>
-        <HeroSection/>
-        <MainSection/>
-        <AdoptSection/>
-        <OurWorkSection/>
-    </div>
+	<div><HeroSection/><MainSection/><AdoptSection/><OurWorkSection/></div>
 </template>
+
 <style scoped>
 	.name {
 		color: green;
