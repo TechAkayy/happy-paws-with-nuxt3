@@ -1,10 +1,9 @@
 // Misc - from rc.10 onward defineNuxtConfig doesn't have to be imported. But red highlights in below export default
-import { defineNuxtConfig } from 'nuxt'
 import { tailwindParser } from '@pinegrow/tailwind-plugin'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-	// ssr: false,
+	ssr: false,
 	modules: [
 		'@pinegrow/nuxt-module',
 		'@nuxtjs/tailwindcss',
