@@ -9,10 +9,22 @@ export default defineNuxtConfig({
 		'@nuxtjs/tailwindcss',
 		'nuxt-directus',
 		'@nuxt/content',
-		'@vueuse/nuxt'
+		'@vueuse/nuxt',
+		'nuxt-icon'
 	],
 	pinegrow: {
 		liveDesigner: {
+			customTypes: {
+				Icon: {
+					name: {
+						customType: 'icon'
+					},
+					size: {
+						customType: 'select',
+						options: ['16', '24', '36']
+					}
+				}
+			},
 			plugins: [tailwindParser],
 			tailwindParser: {
 				configFile: 'tailwind.config.js',

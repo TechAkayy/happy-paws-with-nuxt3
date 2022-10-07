@@ -18,6 +18,7 @@
 		"@vueuse/core": "^9.2.0",
 		"@vueuse/nuxt": "^9.2.0",
 		"nuxt": "^3.0.0-rc.10",
-		"nuxt-directus": "^3.0.3"
+		"nuxt-directus": "^3.0.3",
+		"nuxt-icon": "^0.1.6"
 	}
 }
