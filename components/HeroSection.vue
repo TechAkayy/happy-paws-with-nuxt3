@@ -19,40 +19,36 @@
 	// "
 </script>
 <template>
-    <section class="container mx-auto px-4 text-gray-300">
-        <div class="overflow-hidden pb-6 poster pt-72 px-6 relative rounded-3xl md:py-36 lg:px-12">
-            <div class="-mx-4 flex flex-wrap items-center lg:space-y-0 space-y-6">
-                <div class="px-4 w-full md:w-8/12 xl:w-6/12">
-                    <p class="font-bold font-serif mb-1 text-primary-500 text-xl uppercase">
-						Adopt A Pet </p>
-                    <h1 class="capitalize font-bold mb-2 text-4xl text-white md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl">
-						Thousands of homeless pets, one act of kindness </h1>
-                    <p class="mb-6">
+	<section class="container mx-auto px-4 text-gray-300">
+		<div
+			class="overflow-hidden pb-6 poster pt-72 px-6 relative rounded-3xl md:py-36 lg:px-12"
+		>
+			<div class="-mx-4 flex flex-wrap items-center lg:space-y-0 space-y-6">
+				<div class="px-4 w-full md:w-8/12 xl:w-6/12">
+					<p
+						class="font-bold font-serif mb-1 text-primary-500 text-xl uppercase"
+					>
+						Adopt A Pet
+					</p>
+					<h1
+						class="capitalize font-bold mb-2 text-4xl text-white md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl"
+					>
+						Thousands of homeless pets, one act of kindness
+					</h1>
+					<p class="mb-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
 						vitae congue tortor. Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Curabitur ac sagittis neque, vel egestas est. </p>
-                    <NuxtLink to="/adopt" class="bg-primary-500 hover:bg-primary-600 inline-block px-6 py-2 rounded-full text-gray-900">Adopt Now</NuxtLink>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container hidden mx-auto px-4">
-        <div class="bg-center bg-cover bg-no-repeat h-full pb-6 pt-72 px-6 rounded-3xl w-full md:py-36 lg:px-12" :class="heroImageUrlClass">
-            <div class="-mx-4 flex flex-wrap items-center lg:space-y-0 space-y-6">
-                <div class="px-4 w-full md:w-8/12 xl:w-6/12">
-                    <p class="font-bold font-serif mb-1 text-primary-500 text-xl uppercase">
-						Adopt A Pet </p>
-                    <h1 class="capitalize font-bold mb-2 text-4xl text-white md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl">
-						Thousands of homeless pets, one act of kindness </h1>
-                    <p class="mb-6 text-gray-300">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-						vitae congue tortor. Lorem ipsum dolor sit amet, consectetur
-						adipiscing elit. Curabitur ac sagittis neque, vel egestas est. </p>
-                    <NuxtLink to="/adopt" class="bg-primary-500 hover:bg-primary-600 inline-block px-6 py-2 rounded-full text-gray-900">Adopt Now</NuxtLink>
-                </div>
-            </div>
-        </div>
-    </section>
+						adipiscing elit. Curabitur ac sagittis neque, vel egestas est.
+					</p>
+					<NuxtLink
+						to="/adopt"
+						class="bg-primary-500 hover:bg-primary-600 inline-block px-6 py-2 rounded-full text-gray-900"
+						>Adopt Now</NuxtLink
+					>
+				</div>
+			</div>
+		</div>
+	</section>
 </template>
 <style scoped>
 	.poster {

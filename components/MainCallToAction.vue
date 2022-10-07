@@ -18,29 +18,27 @@
 	]
 </script>
 <template>
-    <section class="container mx-auto px-4 py-12">
-        <div>
-            <p class="font-medium text-center text-primary-600 uppercase">Get Involved</p>
-            <p class="capitalize font-bold mt-3 text-4xl text-center text-gray-800">Small gesture for a big impact</p>
-            <p class="mt-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="-mx-4 flex flex-wrap justify-center mt-12">
-            <MainCallToActionCard v-for="(callToAction, index) in callToActions" :key="index" :action="callToAction.action" :img="callToAction.img" :to="callToAction.to"/> 
-        </div>
-    </section>
-    <div class="container hidden mx-auto px-4 py-12">
-        <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
-            <div class="px-4 text-center w-full md:w-10/12 xl:w-9/12">
-                <h2 class="font-medium mb-2 text-primary-600 uppercase">
-					Get Involved </h2>
-                <h3 class="capitalize font-bold mb-4 text-4xl text-gray-800">
-					Small gesture for a big impact </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-        <div class="-mx-4 flex flex-wrap justify-center text-center">
-            <MainCallToActionCard v-for="(callToAction, index) in callToActions" :img="callToAction.img" :action="callToAction.action" :to="callToAction.to" :key="index"/>
-        </div>
-    </div>
+	<section class="container mx-auto px-4 py-12">
+		<div>
+			<p class="font-medium text-center text-primary-600 uppercase">
+				Get Involved
+			</p>
+			<p class="capitalize font-bold mt-3 text-4xl text-center text-gray-800">
+				Small gesture for a big impact
+			</p>
+			<p class="mt-4 text-center">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			</p>
+		</div>
+		<div class="-mx-4 flex flex-wrap justify-center mt-12">
+			<MainCallToActionCard
+				v-for="(callToAction, index) in callToActions"
+				:key="index"
+				:action="callToAction.action"
+				:img="callToAction.img"
+				:to="callToAction.to"
+			/>
+		</div>
+	</section>
 </template>
 <style scoped></style>
