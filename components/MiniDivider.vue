@@ -6,4 +6,9 @@
 	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+	.main-divider {
+		color: green;
+		font-weight: bold;
+	}
+</style>

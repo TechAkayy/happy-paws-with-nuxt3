@@ -46,8 +46,13 @@ export default defineNuxtConfig({
 		highlight: {
 			theme: 'dracula-soft'
 		}
-	},
-	experimental: {
-		reactivityTransform: true
 	}
+	// experimental: {
+	// 	reactivityTransform: true
+	// },
+	// vue: {
+	// 	compilerOptions: {
+	// 		reactivityTransform: true
+	// 	}
+	// }
 })

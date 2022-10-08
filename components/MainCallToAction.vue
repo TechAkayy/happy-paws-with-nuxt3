@@ -41,4 +41,9 @@
 		</div>
 	</section>
 </template>
-<style scoped></style>
+<style scoped>
+	.main-call-to-action {
+		color: green;
+		font-weight: bold;
+	}
+</style>

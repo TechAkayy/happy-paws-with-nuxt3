@@ -5,7 +5,6 @@
 
 	// const pets = await usePets()
 </script>
-
 <template>
 	<section class="bg-primary-500 py-24 text-center text-gray-50">
 		<div class="container mx-auto px-4">
@@ -40,5 +39,9 @@
 		</div>
 	</section>
 </template>
-
-<style scoped></style>
+<style scoped>
+	.adopt-section {
+		color: green;
+		font-weight: bold;
+	}
+</style>

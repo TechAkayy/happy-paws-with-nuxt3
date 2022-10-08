@@ -10,9 +10,9 @@
 	const breakpoints = useBreakpoints(breakpointsTailwind)
 	const isLgOrAbove = breakpoints.greaterOrEqual('lg')
 
-	const heroImageUrlClass = $computed(() =>
-		isLgOrAbove.value ? heroImageUrlLgOrAboveClass : heroImageUrlMdOrBelowClass
-	)
+	// const heroImageUrlClass = computed(() =>
+	// 	isLgOrAbove.value ? heroImageUrlLgOrAboveClass : heroImageUrlMdOrBelowClass
+	// )
 
 	// style="
 	// 	background-image: url('https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max');
@@ -34,14 +34,12 @@
                     <BaseNavButton to="/adopt">
                         <template v-slot:prepend>
                             <Icon name="noto:dog-face" size="36"></Icon>
-                        </template>
-                        <span>Adopt Now</span>
+                        </template><span>Adopt Now</span>
                         <template v-slot:append>
                             <Icon name="noto:dog-face" size="24"></Icon>
                         </template>
                     </BaseNavButton>
-                    <BaseNavButton to="/adopt">
-                        <span>Adopt Now</span>
+                    <BaseNavButton to="/adopt"><span>Adopt Now</span>
                         <template v-slot:append>
                             <Icon name="noto:dog-face" size="24"></Icon>
                         </template>
@@ -51,6 +49,28 @@
         </div>
     </section>
 </template>
-<style scoped>.poster { z-index: 0; } .poster:before { background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max) !important; background-size: cover; background-position: center center; background-repeat: no-repeat; content: ' '; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; position: absolute; } @media (min-width: 1440px),
+<style scoped>
+	.poster {
+		z-index: 0;
+	}
+	.poster:before {
+		background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max) !important;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		content: ' ';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		position: absolute;
+	}
+	@media (min-width: 1440px),
 		(min-width: 992px) and (-webkit-min-device-pixel-ratio: 2),
-		(min-width: 992px) and (min-resolution: 192dpi) { .poster:before {  background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max) !important; } }</style>
+		(min-width: 992px) and (min-resolution: 192dpi) {
+		.poster:before {
+			background-image: url(https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=2000&fit=max) !important;
+		}
+	}
+</style>
