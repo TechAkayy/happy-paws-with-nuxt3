@@ -18,28 +18,19 @@
 	]
 </script>
 <template>
-	<section class="container mx-auto px-4 py-12">
-		<div>
-			<p class="font-medium text-center text-primary-600 uppercase">
-				Get Involved
-			</p>
-			<p class="capitalize font-bold mt-3 text-4xl text-center text-gray-800">
-				Small gesture for a big impact
-			</p>
-			<p class="mt-4 text-center">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			</p>
-		</div>
-		<div class="-mx-4 flex flex-wrap justify-center mt-12">
-			<MainCallToActionCard
-				v-for="(callToAction, index) in callToActions"
-				:key="index"
-				:action="callToAction.action"
-				:img="callToAction.img"
-				:to="callToAction.to"
-			/>
-		</div>
-	</section>
+    <section class="container mx-auto px-4 py-12">
+        <div>
+            <p class="font-medium text-center text-primary-600 uppercase">
+				Get Involved </p>
+            <p class="capitalize font-bold mt-3 text-4xl text-center text-gray-800">
+				Small gesture for a big impact </p>
+            <p class="mt-4 text-center">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        </div>
+        <div class="-mx-4 flex flex-wrap justify-center mt-12">
+            <MainCallToActionCard v-for="(callToAction, index) in callToActions" :key="index" :action="callToAction.action" :img="callToAction.img" :to="callToAction.to"/>
+        </div>
+    </section>
 </template>
 <style scoped>
 	.main-call-to-action {

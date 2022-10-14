@@ -10,7 +10,18 @@ export default defineNuxtConfig({
 		'nuxt-directus',
 		'@nuxt/content',
 		'@vueuse/nuxt',
-		'nuxt-icon'
+		'nuxt-icon',
+		[
+			'@pinia/nuxt',
+			{
+				autoImports: [
+					// automatically imports `defineStore`
+					'defineStore', // import { defineStore } from 'pinia'
+					// automatically imports `defineStore` as `definePiniaStore`
+					['defineStore', 'definePiniaStore'] // import { defineStore as definePiniaStore } from 'pinia'
+				]
+			}
+		]
 	],
 	pinegrow: {
 		liveDesigner: {

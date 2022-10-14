@@ -1,6 +1,25 @@
 <script setup>
 	import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 
+	const { data: pets } = await useAsyncData('pets', async () => {
+		return await usePets()
+	})
+
+	const pet = computed(() => {
+		return pets.value[2]
+	})
+
+	const pet2 = computed(() => {
+		return pets.value[0]
+	})
+
+	const pet0 = computed(() => {
+		return pets.value[0]
+	})
+
+	const { getItems } = useDirectusItems()
+	const petsNew = await getItems({ collection: 'Pets' })
+
 	const heroImageUrlMdOrBelowClass =
 		"bg-[url('https://images.unsplash.com/photo-1534361960057-19889db9621e?ixid=MnwyMDkyMnwwfDF8c2VhcmNofDEwN3x8ZmluYW5jZXxlbnwwfHx8fDE2Mjg2NDA1NTc&ixlib=rb-1.2.1q=85&fm=jpg&crop=faces&cs=srgb&w=1200&fit=max')]"
 
@@ -26,22 +45,14 @@
                     <p class="font-bold font-serif mb-1 text-primary-500 text-xl uppercase">
 						Adopt A Pet </p>
                     <h1 class="capitalize font-bold mb-2 text-4xl text-white md:leading-tight md:text-5xl lg:leading-tight lg:text-6xl">
-						Thousands of homeless pets, one act of kindness </h1>
+						Thousands of homeless pets, one act of kindness - {{ pet2.Name }} </h1>
                     <p class="mb-6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
 						vitae congue tortor. Lorem ipsum dolor sit amet, consectetur
 						adipiscing elit. Curabitur ac sagittis neque, vel egestas est. </p>
-                    <BaseNavButton to="/adopt">
-                        <template v-slot:prepend>
-                            <Icon name="noto:dog-face" size="36"></Icon>
-                        </template><span>Adopt Now</span>
-                        <template v-slot:append>
-                            <Icon name="noto:dog-face" size="24"></Icon>
-                        </template>
-                    </BaseNavButton>
                     <BaseNavButton to="/adopt"><span>Adopt Now</span>
                         <template v-slot:append>
-                            <Icon name="noto:dog-face" size="24"></Icon>
+                            <Icon name="emojione:cat-face" size="36"></Icon>
                         </template>
                     </BaseNavButton>
                 </div>

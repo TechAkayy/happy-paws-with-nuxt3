@@ -129,8 +129,9 @@
 							d="M15.7 47.82h-2.75v-2.76a3.4 3.4 0 00-6.79 0v2.76H3.4a3.4 3.4 0 000 6.79h2.75v2.76a3.4 3.4 0 006.79 0v-2.76h2.76a3.4 3.4 0 000-6.79zm172.43 9.55h-2.76v-2.76a3.4 3.4 0 00-6.79 0v2.76h-2.76a3.4 3.4 0 000 6.79h2.76v2.76a3.4 3.4 0 006.79 0v-2.76h2.76a3.4 3.4 0 000-6.79zM25.25 203.82H22.5v-2.76a3.4 3.4 0 00-6.79 0v2.76h-2.76a3.4 3.4 0 000 6.79h2.75v2.76a3.4 3.4 0 006.79 0v-2.76h2.76a3.4 3.4 0 000-6.79z"
 							fill="#475f17"
 						></path>
-					</g></svg
-				><span>Happy paws</span>
+					</g>
+				</svg>
+				<span>Happy paws</span>
 			</NuxtLink>
 			<div class="absolute flex flex-col right-0 z-10 lg:static">
 				<button
@@ -138,9 +139,9 @@
 					:class="navOpenClass"
 					@click="navOpen = !navOpen"
 				>
-					<span class="block border-b-2 border-current my-1 w-6"></span>
-					<span class="block border-b-2 border-current my-1 w-6"></span>
-					<span class="block border-b-2 border-current my-1 w-6"></span>
+					<span class="block border-b-2 border-current my-1 w-6"></span
+					><span class="block border-b-2 border-current my-1 w-6"></span
+					><span class="block border-b-2 border-current my-1 w-6"></span>
 				</button>
 				<div
 					class="bg-gray-100 flex flex-col items-end p-4 lg:flex-row lg:items-center lg:p-0"
@@ -152,13 +153,19 @@
 						:to="nav.to"
 						:class="{ 'text-primary-600': nav.to === currentRoutePath }"
 						@click="navOpen = false"
-					>
-						<span>{{ nav.name }}</span>
+						><span>{{ nav.name }}</span>
 					</NuxtLink>
-					<BaseNavButton to="/donate">
+					<BaseNavButton
+						:class="{ 'bg-primary-600': currentRoutePath === '/donate' }"
+						to="/donate"
+					>
 						<span>Donate</span>
 						<template v-slot:append>
-							<Icon name="tabler:2fa" size="24"></Icon>
+							<Icon
+								name="lucide:heart-handshake"
+								size="24"
+								class="text-red-800"
+							></Icon>
 						</template>
 					</BaseNavButton>
 				</div>
