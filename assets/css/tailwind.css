@@ -1,0 +1,27 @@
+/* Pinegrow generated Design Panel Init Begin */
+
+    /* Pinegrow generated Design Panel Init End */
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:300,400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+@layer utilities {
+  .filter-grayscale {
+    filter: grayscale(100%);
+  }
+}
+
+/* Pinegrow generated Design Panel Extra Rules Begin */
+body, html {
+    min-height: 100vh;
+}
+
+    /* Pinegrow generated Design Panel Extra Rules End */
